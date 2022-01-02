@@ -1,5 +1,7 @@
 # DontSleep
 
+A basic python script to move your mouse and keep your PC awake ~~or keep appearing available~~ when you're away. 
+
 ## How to run
 
 1. Clone the repository with: `git clone https://github.com/flyingwonton/DontSleep.git`
