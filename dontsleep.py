@@ -1,13 +1,17 @@
 import pyautogui
 import sys, time
+import random
 #pyautogui.FAILSAFE = False #the failsafe will otherwise be triggered if the mouse is manually moved to a corner
 screenWidth, screenHeight = pyautogui.size()
 
 def cursormovement(timespan, delay):
     try:
         time.sleep(int(delay) * 60)
-        pyautogui.moveTo(screenWidth, 0)
-        pyautogui.moveTo(0, int(screenHeight) - 1, duration=int(timespan) * 60)
+        #pyautogui.moveTo(screenWidth, 0)
+        t_end = time.time() + int(timespan) * 60 #time.time is the current time
+        while time.time() < t_end: #as long as the current time is smaller than the ending time
+            pyautogui.moveTo(random.randint(1, 800), 0) #move the mouse cursor to the X and Y integer coordinates
+            pyautogui.moveTo(0, random.randint(1, 800))
     except ValueError as e:
         print("Please provide only integers as parameter values.")
         sys.exit()
