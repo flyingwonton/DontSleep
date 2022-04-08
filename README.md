@@ -11,7 +11,7 @@ A basic python script to move your mouse and keep your PC awake ~~or keep appear
 3. Run dontsleep.py specifying the  [arguments](#Arguments) below
 
 ### Arguments
-Dontsleep takes only two arguments, both in minutes: 
+Dontsleep takes only two positional arguments, both in minutes: 
 1. **duration** (mandatory): how long the mouse should be moved
 2. **delay** (optional): the minutes after which the mouse should be start moving
 
